@@ -1,0 +1,118 @@
+.form-page {
+  padding: 30px 27.45vw;
+  width: 100%;
+}
+.form-page h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* personal data */
+
+.personal-data .personal-inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* input classes */
+
+.one-input {
+  width: 100%;
+  position: relative;
+}
+
+.one-input input {
+  width: 100%;
+  position: relative;
+  padding: 26px 16px 6px 16px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+
+.one-input .placeholder {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: rgba(17, 17, 17, 0.48);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.one-input input:focus + .placeholder {
+  top: 8px;
+  font-size: 13px;
+}
+
+.one-input input:not(:placeholder-shown) + .placeholder {
+  top: 8px;
+  font-size: 13px;
+}
+
+/* kids block */
+
+.form-page .kids {
+  margin-top: 33px;
+  width: 100%;
+}
+
+.form-page .kids .kids-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.form-page .kids .kids-header button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 2px solid #01a7fd;
+  background-color: #ffffff;
+  color: #01a7fd;
+  transition: 0.2s;
+}
+
+.form-page .kids .kids-header .disabled {
+  cursor: default;
+  opacity: 0;
+}
+
+.form-page .kids .all-kids {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-page .kids .all-kids .one-kid {
+  display: flex;
+  gap: 18px;
+}
+
+.form-page .kids .all-kids .one-kid button {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  font-size: 16px;
+  color: #01a7fd;
+}
+
+/* save button */
+
+.form-page .save-button {
+  margin-top: 30px;
+}
+.form-page .save-button button {
+  cursor: pointer;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 100px;
+  background-color: #01a7fd;
+  color: #ffffff;
+}
