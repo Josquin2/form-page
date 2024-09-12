@@ -80,7 +80,7 @@ function onSaveButtonClick() {
       </div>
 
       <div class="all-kids">
-        <div class="one-kid" v-for="(kid, index) in kids" :key="index">
+        <div class="one-kid" v-for="kid in kids" :key="kid?.id">
           <div class="one-input">
             <input class="input" type="text" placeholder="" v-model="kid.name" />
             <label class="placeholder">Имя</label>
